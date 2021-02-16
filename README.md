@@ -1,3 +1,23 @@
+
+## Project setup
+```
+composer install
+npm install
+```
+
+## Run Migration File and Run Application (Given you have setup a database)
+```
+php artisan migrate 
+php artisan serve
+npm run watch (it can also be dev or prod) 
+```
+
+## Known Issues
+1. The application is session based so there I did not put any middleware on the api's
+2. route issue. if you refresh your current route (e.g. http://127.0.0.1:8000/transactions) it will return 404 as there is no wild card route in web.php yet
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
